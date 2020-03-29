@@ -17,8 +17,9 @@ export default class extends React.Component {
               <h1 className="title">
                 Welcome to <a href="/">Baby-Photos Ranklist</a>
               </h1>
-              <RankList/>
             </main>
+
+            <RankList/>
 
             <footer>
               <a
@@ -32,6 +33,8 @@ export default class extends React.Component {
 
             <style jsx>{`
               .container {
+                width: 94%;
+                margin-left: 3%;
                 min-height: 100vh;
                 padding: 0 0.5rem;
                 display: flex;
@@ -41,7 +44,7 @@ export default class extends React.Component {
               }
 
               main {
-                padding: 5rem 0;
+                padding: 1rem 0;
                 flex: 1;
                 display: flex;
                 flex-direction: column;

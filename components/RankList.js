@@ -49,49 +49,85 @@ const rows = setData([
     },
     {
         "name": "Sudeshchandra Mohana",
-        "score": 5,
+        "score": 3,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Saurabh Maurya",
-        "score": 0,
+        "score": 4,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 1
     },
     {
-        "name": "Ritam Deb",
+        "name": "Saatvik Upadhyay",
         "score": 2,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Sudhakar Gajendran",
-        "score": 6,
+        "score": 2,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ankhuri Dubey",
-        "score": 1,
+        "score": 2,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Vikram Narayan Chidambaram",
-        "score": 3,
+        "score": 1,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ronak Jain",
-        "score": 7,
+        "score": 4,
+        "setBonus": 0,
+        "idBonus": 2
+    },
+    {
+        "name": "Sandeep Chekuri",
+        "score": 2,
         "setBonus": 0,
         "idBonus": 0
     },
     {
-        "name": "Sandeep Chekuri",
-        "score": 0,
+        "name": "Anurag Balhra",
+        "score": 2,
+        "setBonus": 0,
+        "idBonus": 0
+    },
+    {
+        "name": "Gaurav Kushwaha",
+        "score": 3,
+        "setBonus": 0,
+        "idBonus": 0
+    },
+    {
+        "name": "Manoj Chavan",
+        "score": 3,
+        "setBonus": 0,
+        "idBonus": 0
+    },
+    {
+        "name": "Sarthak",
+        "score": 2,
+        "setBonus": 0,
+        "idBonus": 0
+    },
+    {
+        "name": "Shreyansh",
+        "score": 4,
+        "setBonus": 1,
+        "idBonus": 0
+    },
+    {
+        "name": "Sai Teja",
+        "score": 2,
         "setBonus": 0,
         "idBonus": 0
     }
