@@ -17,6 +17,9 @@ export default class extends React.Component {
               <h1 className="title">
                 Welcome to <a href="/">Baby-Photos Ranklist</a>
               </h1>
+                <p className="description">
+                  Rank-list after <code>Round 2</code>
+                </p>
             </main>
 
             <RankList/>
