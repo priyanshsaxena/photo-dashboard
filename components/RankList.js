@@ -28,7 +28,14 @@ const StyledTableRow = withStyles((theme) => ({
 
 function setData(input) {
     input.sort(function(a, b) {
-        return b.score - a.score;
+        if(a.score !== b.score)
+            return b.score - a.score;
+        else {
+            if (a.setBonus !== b.setBonus)
+                return b.setBonus - a.setBonus;
+            else
+                return b.idBonus - a.idBonus;
+        }
     });
     return input.map(function(person, index) {
         return createData(person.name, person.score, person.setBonus, person.idBonus, index+1);
@@ -43,7 +50,7 @@ function createData(name, score, setBonus, idBonus, rank) {
 const rows = setData([
     {
         "name": "Ritam Deb",
-        "score": 2,
+        "score": 5,
         "setBonus": 0,
         "idBonus": 0
     },
@@ -55,79 +62,79 @@ const rows = setData([
     },
     {
         "name": "Saurabh Maurya",
-        "score": 4,
+        "score": 7,
         "setBonus": 0,
         "idBonus": 1
     },
     {
         "name": "Saatvik Upadhyay",
-        "score": 2,
+        "score": 6,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 2
     },
     {
         "name": "Sudhakar Gajendran",
-        "score": 2,
+        "score": 5,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ankhuri Dubey",
-        "score": 2,
+        "score": 5,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Vikram Narayan Chidambaram",
-        "score": 1,
+        "score": 4,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ronak Jain",
-        "score": 4,
+        "score": 7,
         "setBonus": 0,
         "idBonus": 2
     },
     {
         "name": "Sandeep Chekuri",
-        "score": 2,
+        "score": 4,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Anurag Balhra",
-        "score": 2,
+        "score": 5,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Gaurav Kushwaha",
-        "score": 3,
-        "setBonus": 0,
-        "idBonus": 0
+        "score": 8,
+        "setBonus": 1,
+        "idBonus": 1
     },
     {
         "name": "Manoj Chavan",
-        "score": 3,
+        "score": 6,
         "setBonus": 0,
         "idBonus": 0
     },
     {
-        "name": "Sarthak",
-        "score": 2,
-        "setBonus": 0,
-        "idBonus": 0
-    },
-    {
-        "name": "Shreyansh",
+        "name": "Sarthak Sota",
         "score": 4,
+        "setBonus": 0,
+        "idBonus": 0
+    },
+    {
+        "name": "Shreyansh Chhajed",
+        "score": 6,
         "setBonus": 1,
         "idBonus": 0
     },
     {
         "name": "Sai Teja",
-        "score": 2,
+        "score": 5,
         "setBonus": 0,
         "idBonus": 0
     }
