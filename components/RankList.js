@@ -50,91 +50,92 @@ function createData(name, score, setBonus, idBonus, rank) {
 const rows = setData([
     {
         "name": "Ritam Deb",
-        "score": 8,
+        "score": 13,
         "setBonus": 0,
-        "idBonus": 1
+        "idBonus": 2
+        // +1 trick-bonus
     },
     {
         "name": "Sudeshchandra Mohana",
-        "score": 6,
+        "score": 7,
         "setBonus": 0,
         "idBonus": 1
     },
     {
         "name": "Saurabh Maurya",
-        "score": 9,
+        "score": 12,
         "setBonus": 0,
-        "idBonus": 1
+        "idBonus": 2
     },
     {
         "name": "Saatvik Upadhyay",
-        "score": 9,
+        "score": 10,
         "setBonus": 0,
         "idBonus": 2
     },
     {
         "name": "Sudhakar Gajendran",
-        "score": 7,
+        "score": 9,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ankhuri Dubey",
-        "score": 7,
+        "score": 9,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Vikram Narayan Chidambaram",
-        "score": 7,
+        "score": 9,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Ronak Jain",
-        "score": 10,
+        "score": 11,
         "setBonus": 0,
         "idBonus": 3
     },
     {
         "name": "Sandeep Chekuri",
-        "score": 5,
+        "score": 6,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Anurag Balhra",
-        "score": 7,
+        "score": 1,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Gaurav Kushwaha",
-        "score": 11,
+        "score": 13,
         "setBonus": 1,
         "idBonus": 1
     },
     {
         "name": "Manoj Chavan",
-        "score": 7,
+        "score": 8,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Sarthak Sota",
-        "score": 5,
+        "score": 7,
         "setBonus": 0,
         "idBonus": 0
     },
     {
         "name": "Shreyansh Chhajed",
-        "score": 9,
+        "score": 10,
         "setBonus": 2,
         "idBonus": 0
     },
     {
         "name": "Sai Teja",
-        "score": 6,
+        "score": 8,
         "setBonus": 0,
         "idBonus": 0
     }
