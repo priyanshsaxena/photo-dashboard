@@ -30,114 +30,128 @@ function setData(input) {
     input.sort(function(a, b) {
         if(a.score !== b.score)
             return b.score - a.score;
-        else {
-            if (a.setBonus !== b.setBonus)
-                return b.setBonus - a.setBonus;
-            else
-                return b.idBonus - a.idBonus;
-        }
+        else if(a.trickBonus != b.trickBonus)
+            return b.trickBonus - a.trickBonus;
+        else if (a.setBonus !== b.setBonus)
+            return b.setBonus - a.setBonus;
+        else
+            return b.idBonus - a.idBonus;
     });
     return input.map(function(person, index) {
-        return createData(person.name, person.score, person.setBonus, person.idBonus, index+1);
+        return createData(person.name, person.score, person.trickBonus, person.setBonus, person.idBonus, index+1);
     });
 
 }
 
-function createData(name, score, setBonus, idBonus, rank) {
-  return { name, score, setBonus, idBonus, rank };
+function createData(name, score, trickBonus, setBonus, idBonus, rank) {
+  return { name, score, trickBonus, setBonus, idBonus, rank };
 }
 
 const rows = setData([
     {
         "name": "Ritam Deb",
-        "score": 13,
+        "score": 14,
         "setBonus": 0,
-        "idBonus": 2
-        // +1 trick-bonus
+        "idBonus": 2,
+        "trickBonus": 1
     },
     {
         "name": "Sudeshchandra Mohana",
-        "score": 7,
+        "score": 8,
         "setBonus": 0,
-        "idBonus": 1
+        "idBonus": 1,
+        "trickBonus": 0
     },
     {
         "name": "Saurabh Maurya",
-        "score": 12,
+        "score": 14,
         "setBonus": 0,
-        "idBonus": 2
+        "idBonus": 2,
+        "trickBonus": 0
     },
     {
         "name": "Saatvik Upadhyay",
-        "score": 10,
+        "score": 11,
         "setBonus": 0,
-        "idBonus": 2
+        "idBonus": 2,
+        "trickBonus": 0
     },
     {
         "name": "Sudhakar Gajendran",
-        "score": 9,
+        "score": 10,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Ankhuri Dubey",
-        "score": 9,
+        "score": 13,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 1,
+        "trickBonus": 1
     },
     {
         "name": "Vikram Narayan Chidambaram",
-        "score": 9,
+        "score": 10,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Ronak Jain",
-        "score": 11,
+        "score": 12,
         "setBonus": 0,
-        "idBonus": 3
+        "idBonus": 3,
+        "trickBonus": 0
     },
     {
         "name": "Sandeep Chekuri",
-        "score": 6,
+        "score": 7,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Anurag Balhra",
-        "score": 1,
+        "score": 9,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Gaurav Kushwaha",
-        "score": 13,
+        "score": 15,
         "setBonus": 1,
-        "idBonus": 1
+        "idBonus": 1,
+        "trickBonus": 0
     },
     {
         "name": "Manoj Chavan",
-        "score": 8,
+        "score": 9,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Sarthak Sota",
-        "score": 7,
+        "score": 8,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Shreyansh Chhajed",
-        "score": 10,
+        "score": 12,
         "setBonus": 2,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     },
     {
         "name": "Sai Teja",
-        "score": 8,
+        "score": 9,
         "setBonus": 0,
-        "idBonus": 0
+        "idBonus": 0,
+        "trickBonus": 0
     }
 ]);
 
@@ -157,6 +171,7 @@ export default function RankList() {
           <TableRow>
             <StyledTableCell>Bored Panda</StyledTableCell>
             <StyledTableCell align="right">Boredom</StyledTableCell>
+            <StyledTableCell align="right">Trick Bonus</StyledTableCell>
             <StyledTableCell align="right">Set Bonus</StyledTableCell>
             <StyledTableCell align="right">ID Bonus</StyledTableCell>
             <StyledTableCell align="right">Rank</StyledTableCell>
@@ -169,6 +184,7 @@ export default function RankList() {
                 {row.name}
               </StyledTableCell>
               <StyledTableCell align="right">{row.score}</StyledTableCell>
+              <StyledTableCell align="right">{row.trickBonus}</StyledTableCell>
               <StyledTableCell align="right">{row.setBonus}</StyledTableCell>
               <StyledTableCell align="right">{row.idBonus}</StyledTableCell>
               <StyledTableCell align="right">{row.rank}</StyledTableCell>
