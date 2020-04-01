@@ -18,7 +18,7 @@ export default class extends React.Component {
                 Welcome to <a href="/">Baby-Photos Ranklist</a>
               </h1>
                 <p className="description">
-                  Rank-list after <code>Round 4</code>
+                  Rank-list after <code>Round 5</code>
                 </p>
             </main>
 
